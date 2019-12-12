@@ -5,6 +5,11 @@ import pickle
 # create a flask app
 app = Flask(__name__)
 
+# default route 
+@app.route('/')
+def welcome():
+    return 'Machine Learning A-la-carte 🤺
+
 # function to load the model 
 def load_model():
     file_name = "models/model_file.p"
@@ -28,6 +33,6 @@ def predict():
     response = json.dumps({ 'response': prediction })
     return response, 200
 
+
 if __name__ == "__main__":
     application.run(debug=True)
-    
