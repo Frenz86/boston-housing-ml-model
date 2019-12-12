@@ -5,6 +5,7 @@ from sklearn.linear_model import  LinearRegression
 # unleash pandas and the rest of the gang as well! 
 import pandas as pd
 import numpy as np
+import pickle 
 
 
 
@@ -63,6 +64,12 @@ model.fit(X_arr, y_train)
 
 # predict results 
 y_pred = model.predict(X_test_arr)
+
+# and then pickle the model 
+pickled_model = { 'model': model }
+pickle.dump(pickled_model, open('model_file' + ".p", "wb"))
+
+
 
 
 
