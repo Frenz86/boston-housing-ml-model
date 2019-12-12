@@ -1,3 +1,4 @@
+import flask
 from flask import Flask, jsonify, request
 import json
 import pickle
@@ -8,7 +9,7 @@ app = Flask(__name__)
 # default route 
 @app.route('/')
 def welcome():
-    return 'Machine Learning A-la-carte 🤺
+    return 'Machine Learning A-la-carte 🤺'
 
 # function to load the model 
 def load_model():

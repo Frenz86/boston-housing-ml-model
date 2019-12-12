@@ -15,3 +15,7 @@ Clone the repository and run the following commands to get you up and running
 Run the Jupyter Notebook using the following command 
 
 ` jupter notebook` 
+
+Run the API using the following command. You can specify another port apart from `8080`
+
+`gunicorn --bind 0.0.0.0:8080 wsgi:application -w 1` 
