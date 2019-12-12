@@ -12,4 +12,6 @@ Clone the repository and run the following commands to get you up and running
 
 ` pip install -r requirements.txt` 
 
-` 
+Run the Jupyter Notebook using the following command 
+
+` jupter notebook` 
