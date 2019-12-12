@@ -1,6 +1,8 @@
 # Boston Housing Price Prediction 
 
-This is a simple Machine Learning Model that helps predict housing prices in Boston. Its written using scikit learn and pickled using Flask for use in a production system via an API endpoint 
+This is a simple Machine Learning Model that helps predict housing prices in Boston. Its written using scikit learn and pickled using Flask for use in a production system via an API endpoint. 
+
+The Model is not accurate and thus should not be used in any production systems. The focus of this codebase is to be able to pickle the model onto a REST API. 
 
 ## Installation 
 
